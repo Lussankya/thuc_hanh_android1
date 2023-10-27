@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- First Column: ImageView -->
+    <ImageView
+        android:id="@+id/imageViewCat"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/cat1"
+        android:layout_centerVertical="true" />
+
+    <!-- Second Column: TextViews -->
+    <TextView
+        android:id="@+id/textViewCatName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageViewCat"
+        android:layout_alignParentTop="true"
+        android:text="Text 1" />
+
+    <TextView
+        android:id="@+id/textViewCatPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageViewCat"
+        android:layout_below="@+id/textViewCatName"
+        android:text="Text 2" />
+
+    <TextView
+        android:id="@+id/textViewCatDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageViewCat"
+        android:layout_below="@+id/textViewCatPrice"
+        android:text="Text 3" />
+
+    <!-- Third Column: Button -->
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Delete" />
+
+</RelativeLayout>
